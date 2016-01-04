@@ -1,0 +1,20 @@
+{
+	"name": "Staff Management",
+	"version": "1.0",
+	"author": "David M. Sledge, Alexia E. Smith",
+	"url": "http://www.mediawiki.org/wiki/Extension:Character_Escapes",
+	"descriptionmsg": "characterescapes_description",
+	"type": "parserhook",
+	"ExtensionMessagesFiles": {
+		"CharacterEscapesMessages": "CharacterEscapes.i18n.php"
+	},
+	"AutoloadClasses": {
+		"CharacterEscapesHooks": "CharacterEscapes.hooks.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": [
+			"CharacterEscapesHooks::onParserFirstCallInit"
+		]
+	},
+	"manifest_version": 1
+}
