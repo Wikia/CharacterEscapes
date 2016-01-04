@@ -3,19 +3,22 @@ Sometimes it is desired that wiki markup be parsed (or remain unparsed) under ce
 
 * \l ('''l'''ess than) is translated to &lt;
 * \g ('''g'''reater than) is translated to &gt;
-----
 * \o ('''o'''pen double curly braces) is translated to {<nowiki/>{
 * \c ('''c'''lose double curly braces) is translated to }<nowiki/>}
 * \p ('''p'''ipe) is translated to |
-----
 * \\ is translated to '''\'''
-----
 * \n is translated to a '''n'''ewline
 
 The first two translations make it possible to embed a ''wiki tag extension'' into a parameter of a parser function call. The next three translations make it possible to ''call a template, invoke a magic word, or call a parser function'' which prevents them from executing until conditions dictate that the results of such a call will be displayed.  The next one is for times where you want to display text like "\p" without having it converted into a pipe, which is done by writing it as "\\p".  The last one is for tags that use newline characters as delimiters for parameters.  It allows a newline character to be passed as part of the parameter instead of indicating the beginning/ending of a parameter.
 
 ##Installation
-{{ {{TNTN|ExtensionInstall}}|registration=yes |download-link=[https://github.com/CurseStaff/CharacterEscapes/archive/master.zip Download]}}
+Download and place the file(s) in a directory called CharacterEscapes in your extensions/ folder.
+Add the following code at the bottom of your LocalSettings.php:
+
+	wfLoadExtension( 'CharacterEscapes' );
+
+Yes Done - Navigate to Special:Version on your wiki to verify that the extension is successfully installed.
+
 
 ##Example
 ```
