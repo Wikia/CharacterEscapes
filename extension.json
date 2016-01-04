@@ -1,7 +1,7 @@
 {
-	"name": "Staff Management",
+	"name": "Character Escapes",
 	"version": "1.0",
-	"author": "David M. Sledge, Alexia E. Smith",
+	"author": "David M. Sledge",
 	"url": "http://www.mediawiki.org/wiki/Extension:Character_Escapes",
 	"descriptionmsg": "characterescapes_description",
 	"type": "parserhook",
