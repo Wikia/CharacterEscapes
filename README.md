@@ -17,7 +17,7 @@ Add the following code at the bottom of your LocalSettings.php:
 
 	wfLoadExtension( 'CharacterEscapes' );
 
-Yes Done - Navigate to Special:Version on your wiki to verify that the extension is successfully installed.
+Done - Navigate to Special:Version on your wiki to verify that the extension is successfully installed.
 
 
 ##Example
@@ -37,7 +37,7 @@ produces the following:
 * 3
 * 4
 
-Note that the example uses the [[Extension:VariablesExtension|variables]] and [[Extension:Control Structure Functions|control structure functions]] extensions.
+Note that the example uses the [variables](https://www.mediawiki.org/wiki/Extension:VariablesExtension) and [control structure functions](https://www.mediawiki.org/wiki/Extension:Control_Structure_Functions) extensions.
 
 ##Limitations
 MediaWiki does not support nested tags of the same type (see [[bugzilla:1310|bug #1310]]).  Given the following:
@@ -59,4 +59,4 @@ A workaround is to explicitly write out the nested escape sequences:
 Another solution is to apply the modification given in the discussion of [[bugzilla:1310|bug #1310]].
 
 ##Writing Extensions that Use Character Escapes
-If you would like your extension to make use of character escapes, the class CharacterEscapes contains two static functions for replacing characters with escapes (<tt>CharacterEscapes::charEsc()</tt>) and replacing escapes with characters (<tt>CharacterEscapes::charUnesc()</tt>).
+If you would like your extension to make use of character escapes, the class CharacterEscapes contains two static functions for replacing characters with escapes (`CharacterEscapesHooks::charEsc()`) and replacing escapes with characters (`CharacterEscapesHooks::charUnesc()`).

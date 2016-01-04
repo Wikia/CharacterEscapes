@@ -72,7 +72,7 @@ A workaround is to explicitly write out the nested escape sequences:
 Another solution is to apply the modification given in the discussion of [[bugzilla:1310|bug #1310]].
 
 ==Writing Extensions that Use Character Escapes==
-If you would like your extension to make use of character escapes, the class CharacterEscapes contains two static functions for replacing characters with escapes (<tt>CharacterEscapes::charEsc()</tt>) and replacing escapes with characters (<tt>CharacterEscapes::charUnesc()</tt>).
+If you would like your extension to make use of character escapes, the class CharacterEscapes contains two static functions for replacing characters with escapes (<tt>CharacterEscapesHooks::charEsc()</tt>) and replacing escapes with characters (<tt>CharacterEscapesHooks::charUnesc()</tt>).
 
 ==See also==
 * [[Extension:Control Structure Functions]]
