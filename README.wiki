@@ -74,7 +74,7 @@ A workaround is to explicitly write out the nested escape sequences:
 Another solution is to apply the modification given in the discussion of [[bugzilla:1310|bug #1310]].
 
 == Installation ==
-{{TNT|ExtensionInstall
+{{ExtensionInstall
 |CharacterEscapes
 |download-link=[https://gitlab.com/hydrawiki/extensions/characterescapes/-/archive/1.0.0/characterescapes-1.0.0.zip Download, extract]
 |registration=required
